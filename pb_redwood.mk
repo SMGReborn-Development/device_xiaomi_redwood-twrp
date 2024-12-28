@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The TWRP Open Source Project
+# Copyright (C) 2021 The pb Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,13 +19,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Omni stuff.
-$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, vendor/pb/config/common.mk)
 
 # Inherit from redwood device
 $(call inherit-product, device/xiaomi/redwood/device.mk)
 
 PRODUCT_DEVICE := redwood
-PRODUCT_NAME := twrp_redwood
+PRODUCT_NAME := pb_redwood
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := POCO X5 Pro 5G
 PRODUCT_MANUFACTURER := xiaomi
+
+# PBRP specific build flags
+PB_DISABLE_DEFAULT_DM_VERITY := true
+PB_DISABLE_DEFAULT_TREBLE_COMP := true
+# PB Torch
+PB_TORCH_PATH := "/sys/class/leds/led:torch_0"
