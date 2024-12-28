@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/taoyao
+DEVICE_PATH := device/xiaomi/redwood
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -45,7 +45,7 @@ ENABLE_SCHEDBOOST := true
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := taoyao
+TARGET_BOOTLOADER_BOARD_NAME := redwood
 TARGET_NO_BOOTLOADER := true
 
 # Kernel

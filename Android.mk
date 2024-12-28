@@ -16,6 +16,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),taoyao)
+ifeq ($(TARGET_DEVICE),redwood)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif

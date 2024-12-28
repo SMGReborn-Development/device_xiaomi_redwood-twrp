@@ -21,11 +21,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
-# Inherit from taoyao device
-$(call inherit-product, device/xiaomi/taoyao/device.mk)
+# Inherit from redwood device
+$(call inherit-product, device/xiaomi/redwood/device.mk)
 
-PRODUCT_DEVICE := taoyao
-PRODUCT_NAME := twrp_taoyao
+PRODUCT_DEVICE := redwood
+PRODUCT_NAME := twrp_redwood
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Xiaomi 12 Lite
+PRODUCT_MODEL := POCO X5 Pro 5G
 PRODUCT_MANUFACTURER := xiaomi
